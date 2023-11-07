@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Dice" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>body{margin-left: 450px;
+    margin-top: 200px;}</style>
+<body>
+    <h1 id="num">0</h1>
+    <button onclick="roll()">Roll the Dice</button>
+    <script>
+        function roll(){
+            var num=Math.floor(Math.random()*6)+1
+            console.log(num)
+            document.getElementById("num").innerHTML=num
+        }
+    </script>
+</body>
+</html>
